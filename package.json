@@ -1,0 +1,41 @@
+{
+  "name": "form-to-request-object",
+  "description": "Create a request-ready JSON payload from a submitted HTML form",
+  "version": "1.0.0",
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/)",
+  "bugs": {
+    "url": "https://github.com/zeke/form-to-request-object/issues"
+  },
+  "dependencies": {
+    "steeltoe": "^1.0.1"
+  },
+  "devDependencies": {
+    "brfs": "^1.4.0",
+    "browserify": "^9.0.7",
+    "domify": "^1.3.2",
+    "faucet": "0.0.1",
+    "jquery": "^2.1.3",
+    "smokestack": "^3.2.2",
+    "tap": "^0.7.1",
+    "tap-closer": "^1.0.0",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/zeke/form-to-request-object",
+  "keywords": [
+    "form",
+    "html",
+    "jquery",
+    "nets",
+    "request",
+    "xhr"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeke/form-to-request-object"
+  },
+  "scripts": {
+    "test": "browserify -t brfs test/index.js | tap-closer | smokestack | faucet"
+  }
+}
